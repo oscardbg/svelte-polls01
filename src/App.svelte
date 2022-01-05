@@ -2,6 +2,7 @@
    import Header from "./components/Header.svelte";
    import Footer from "./components/Footer.svelte";
    import Tabs from "./shared/Tabs.svelte";
+   import CreatePoll from "./components/CreatePoll.svelte";
 
    let items = ["Current Polls", "Add New Poll"];
    let activeItem = "Current Polls";
@@ -17,7 +18,7 @@
    {#if activeItem === items[0]}
       <p>Poll list component</p>
    {:else if activeItem === items[1]}
-      <p>New poll from component goes here</p>
+      <CreatePoll />
    {/if}
 </main>
 <Footer />
