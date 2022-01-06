@@ -9,6 +9,14 @@ const PollStore = writable([
       votesA: 9,
       votesB: 19,
    },
+   {
+      id: 2,
+      question: "React or Svelte..?",
+      answerA: "React",
+      answerB: "Svelte",
+      votesA: 5,
+      votesB: 68,
+   },
 ]);
 
 export default PollStore;

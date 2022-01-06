@@ -6,6 +6,8 @@
 <div class="poll-list">
    {#each $PollStore as poll (poll.id)}
       <PollDetail {poll} />
+   {:else}
+      <p>Not polls created yet, create one...</p>
    {/each}
 </div>
 
